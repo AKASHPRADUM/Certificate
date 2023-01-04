@@ -1,0 +1,149 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    background: #eee;
+}
+header{
+    max-width: 900px;
+    margin: auto;
+    box-shadow: 30px 0px 40px rgb(0 0 0 / 10%), -30px 0px 40px rgb(0 0 0 / 10%);
+}
+.flexbox{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    height: 100vh;
+    background-color: white;
+}
+.textarea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 1rem;
+    flex: 0 1 40vw;
+    max-width: 70vw;
+}
+.inner-textarea h2 {
+    color: #888;
+    margin-bottom: 3rem;
+}
+.inner-textarea{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.show{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.camera_image{
+    background-image: url(./img/top.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex: 0 1 60vw;
+}
+.btn{
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 0.7rem 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: black;
+    box-shadow: 10px 10px 10px rgb(0 0 0 / 50%);
+}
+.btn:hover{
+    /* background-color: rgb(235, 235, 235); */
+    background-color: black;
+    color: white;;
+}
+.imgGap{
+    margin-bottom: 2px;
+}
+
+.text-level-2{
+text-align: center;
+padding: 1rem 0rem 1rem 0rem;
+}
+.text-level-2 h2{
+    padding: 1rem 0rem;
+    font-weight: 600;
+}
+.text-level-2 p{
+    padding-bottom: 25px;
+    margin-bottom: 15px;
+}
+.text-level-2 img{
+    box-shadow: 0px 30px 30px rgb(0 0 0 / 40%), 0px -30px 40px rgb(0 0 0 / 15%);
+}
+.last{
+    padding: 1rem 0rem 0rem 0rem;
+}
+.style{
+    border-left: 4px dotted black;
+    border-right: 4px dotted black;
+}
+footer{
+    text-align: center;
+    padding: 4rem 0rem 3rem 0rem;
+}
+footer h3{
+    line-height: 0rem;
+    font-size: 3rem;
+    color: #6d6d6d;
+    padding: 2rem 0rem 2rem 1rem;
+}
+footer p{
+    padding-top: 1.2rem;
+}
+.fotterLink{
+    text-decoration: none;
+    color: black;
+}
+h1 {
+    font-weight: 400;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+h2 {
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    margin: 0;
+}
+img {
+    display: block;
+    width: 100%;
+}
+.copyright{
+    margin-top: 35px;
+}
+@media (max-width: 600px){
+    .flexbox{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    .textarea{
+        max-width: none;
+        padding: 3rem 0;
+    }
+    .camera_image{
+        height: 50vh;
+    }
+}
+
+@media (max-width: 280px){
+    h1 {
+        font-size: 1.5rem;
+    }
+    footer h3{
+        line-height: 3rem;
+    }
+}
